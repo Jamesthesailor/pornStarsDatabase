@@ -18,7 +18,6 @@ hairColor = []
 height = []
 weight = []
 
-
 for a in ascii_lowercase:
 	url = 'http://www.slutsinc.com/browse-'
 	url += (a+ '.php')
@@ -26,7 +25,6 @@ for a in ascii_lowercase:
 	root = LH.fromstring(r.content)
 	soup = BeautifulSoup(r.text,'html.parser')
 	print (url)
-		
 		
 	table = soup.find_all('table')[2]
 	for row in table.find_all('tr')[2:]:
